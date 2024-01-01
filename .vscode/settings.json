@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/aedc8f91-869e-4d2d-bd88-8d24c3ff0ab1/resourceGroups/rg1/providers/Microsoft.Web/sites/PriceUpdaterNG",
+    "appService.deploySubpath": "dist\\price-updates"
+}
