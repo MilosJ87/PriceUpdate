@@ -1,3 +1,142 @@
-<router-outlet></router-outlet>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <!-- Your navigation content -->
+  </nav>
+  <!-- Header Section -->
+  <header class="mastbad">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>Zalagaonica | Menjačnica Gold Princess</title>
+     <!-- <link rel="icon" type="image/x-icon" href="assets/img/diamond.jpg" />-->
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+      <script src="Scripts/bootstrap.bundle.js"></script>
+      <script src="js/scripts.js"></script>
+      <!-- Google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+      <script src="js/myCarousel.js"></script>
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="/src/app/generic-cenovnik/generic-cenovnik.component.css" rel="stylesheet" />
+  </head>
+  </header>
+  <!-- Container with Zlatne Kovanice Table -->
+  <div class="container gutter-bottom">
+    <div class="row">
+      <div class="col-12 text-center text-uppercase">
+        <h1 class="gutter-bottom gutter-top-double">ZLATNE KOVANICE</h1>
+      </div>
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Težina</th>
+                <th>Naziv</th>
+                <th>Zemlja porekla</th>
+                <th>Proizvodjač</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tbody>
+              <tr *ngFor="let kovanice of zlatneKovanices">
+                <td>{{ kovanice.Weight }}</td>
+                <td>{{ kovanice.Name }}</td>
+                <td>{{ kovanice.CountryOfOrigin }}</td>
+                <td>{{ kovanice.Manufactuer }}</td>
+                <td>{{ kovanice.Price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container gutter-bottom">
+    <div class="row">
+      <div class="col-12 text-center text-uppercase">
+        <h1 class="gutter-bottom gutter-top-double">ZLATNE POLUGE</h1>
+      </div>
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Težina</th>
+                <th>Naziv</th>
+                <th>Zemlja porekla</th>
+                <th>Proizvodjač</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tbody>
+              <tr *ngFor="let poluge of zlatnePoluges">
+                <td>{{ poluge.Weight }}</td>
+                <td>{{ poluge.Name }}</td>
+                <td>{{ poluge.CountryOfOrigin }}</td>
+                <td>{{ poluge.Manufactuer }}</td>
+                <td>{{ poluge.Price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container gutter-bottom">
+    <div class="row">
+      <div class="col-12 text-center text-uppercase">
+        <h1 class="gutter-bottom gutter-top-double">Kursna Lista</h1>
+      </div>
+      <div class="col-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Apoen</th>
+                <th>Kupovni</th>
+                <th>Srednji</th>
+                <th>Prodajni</th>
+                <th>Naziv</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let currency of currencies">
+                <td>{{ currency.Apoen }}</td>
+                <td>{{ currency.Kupovni }}</td>
+                <td>{{ currency.Srednji }}</td>
+                <td>{{ currency.Prodajni }}</td>
+                <td>{{ currency.Naziv }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Additional sections or content from your provided HTML -->
+  
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-lg-center">Powered by MJSolutions</div>
+      </div>
+    </div>
+  </footer>
+  
   
   
